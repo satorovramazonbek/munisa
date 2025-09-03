@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>IQ для 9 класса (Схемотехника)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Пройди тест и узнай свои сильные стороны!</h1>
+    <button id="startBtn">Начать тест</button>
+
+    <div id="quiz" class="hidden">
+      <div id="questionBox"></div>
+      <ul id="answers"></ul>
+      <button id="nextBtn" disabled>Далее</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Результаты</h2>
+      <canvas id="resultChart" width="300" height="300"></canvas>
+      <p id="resultText"></p>
+      <button id="retryBtn">Пройти снова</button>
+      <button id="shareBtn">Поделиться результатом</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
